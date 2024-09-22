@@ -112,7 +112,116 @@
             <h2>Contact Me</h2>
             <p>I'd really like to hear from you</p>
 
-            <form action=""></form>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                <label for="FirstName">First Name:</label>
+                <input type="text" name="FirstName" id="FirstName" placeholder="Tsintop" autocomplete="on" required autofocus> 
+            </p>
+           
+
+                <p>
+                <label for="LastName">Last Name:</label>
+                <input type="text" name="LastName" id="LastName" placeholder="Karma" autocomplete="on" required> 
+            </p>
+          
+
+       
+                <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="your secret" required> 
+            </p>
+
+        
+
+                <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="0905500000" pattern="0 [7-9][0-1][0-9]{8}" required> 
+            </p>
+
+
+                <p>
+                <label for="Decade">Favorite Decade:</label>
+                <input type="number" name="Decade" id="Decade" min="1950" max="2020" step="10" value="1980"> 
+            </p>
+
+                
+                <p>
+                <label for="coffee">Favorite Coffee:</label>
+                <input type="text" name="coffee" id="coffee" list="coffee-list">
+                <datalist id="coffee-list">
+                    <option value="regular coffee" selected>Regular Coffee</option>
+                    <option value="iced coffee">Iced Coffee</option>
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="cortado">Cortado</option>
+                    <option value="americano">Americano</option>
+                    <option value="others">Others</option>
+                </datalist>
+            </p>
+
+                <p>
+                <label for="sharwama">Favorite Sharwama:</label>
+                <select name="sharwama" id="sharwama">
+                    <option value="beef sharwama">Beef Sharwama</option>
+                    <option value="chicken sharwama" selected>Chicken Sharwama</option>
+                    <option value="mixed sharwama">Mixed Sharwama</option>
+                    <option value="others">Others</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>What is Your Favorite Food?</legend>
+            <p>
+                <input type="radio" name="food" id="tacos" value="tacos">
+                <label for="tacos">Tacos</label>
+            </p>
+            <p>
+                <input type="radio" name="food" id="pizza" value="pizza">
+                <label for="pizza">Pizza</label>
+            </p>
+            <p>
+                <input type="radio" name="food" id="others" value="others">
+                <label for="others">Others</label>
+            </p>
+        </fieldset>
+
+        <br>
+        
+        <fieldset>
+            <legend>What is Your Favorite Food?</legend>
+            <p>
+            <label for="rice">Rice</label>
+            <input type="radio" id="rice" name="food" value="rice">
+        </p>
+        <p>
+            <label for="pasta">Pasta</label>
+            <input type="radio" id="pasta" name="food" value="pasta">
+        </p>
+        </fieldset>
+
+        <br>
+        
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+        </p>
+        <p>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+        </p>
+        </fieldset>
+
+        
+       
+       
+        
+            </form>
 
         </article>
     </main>
