@@ -44,41 +44,82 @@
     <hr>
 
     <Article>
-        <h1>PROFILE</h1>
+        <h2>PROFILE</h2>
         <P>Please fill in the form</P>
-        <section>
+        
     <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>
         <label for="FirstName"> Enter You First Name</label>
-        <input type="text" placeholder="First Name"> 
-    </section>
+        <input type="text" id="FirstName" placeholder="First Name">
+    </p>
 
-    <br>
 
-    <section>
+    <p>
         <label for="LastName">Enter Your Last Name</label>
-        <input type="text" placeholder="Last Name">
-    </section>
+        <input type="text" id="LastName" placeholder="Last Name">
+    </p>
+   
 
-    <br>
-    <section>
-        <label for="email">Enter Your Email</label>
-        <input type="email" placeholder="Email">
-    </section>
+   <p>
+        <label for="Email">Enter Your Email</label>
+        <input type="email" id="Email" placeholder="Email">
+    </p>
 
-    <br>
 
-    <section>
-        <label for="gender">Gender</label>
-        <input type="radio" name="gender"> Male
-        <input type="radio" name="gender"> Female
-    </section>
-        <input type="password" placeholder="Password">
-        <input type="number" placeholder="Number"> 
-        <input type="checkbox" name="checkbox" id="">
-        <input type="radio" name="checkbox" id="">
-        <input type="date" name="" id="">
-        <input type="file" name="" id="">
-        <button type="submit">Submit</button>
+    <!-- <p>
+        <label>Gender</label><br>
+        <label for="male">
+            <input type="radio" id="male" name="gender" value="male"> Male
+        </label>
+        <label for="female">
+            <input type="radio" id="female" name="gender" value="female"> Female
+        </label>
+    </p>
+     -->
+
+    <p>
+        <label for="sharwama">Favorite Sharwama:</label>
+       <input type="text" name="sharwama" id="sharwama" list="sharwama-list">
+       <datalist id="sharwama-list">
+            <option value="beef sharwama">Beef Sharwama</option>
+            <option value="chicken sharwama" selected>Chicken Sharwama</option>
+            <option value="mixed sharwama">Mixed Sharwama</option>
+            <option value="others">Others</option>
+        </datalist>
+    </p>
+
+    <!-- <p>
+        <label for="coffee">Favorite Coffee:</label>
+        <select name="coffee" id="coffee" multiple size="5"> 
+            <optgroup label="Coffees">
+            <option value="regular coffee" selected>Regular Coffee</option>
+            <option value="iced coffee">Iced Coffee</option>
+        </optgroup>
+        <optgroup label="Espresso Drinks">
+            <option value="latte">Latte</option>
+            <option value="cappuccino">Cappuccino</option>
+            <option value="cortado">Cortado</option>
+            <option value="americano">Americano</option>
+        </optgroup>
+            <option value="others">Others</option>
+    </p> -->
+</fieldset>
+
+<br>
+
+<fieldset>
+    <legend>Gender</legend>
+    <p>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+    </p>
+    <p>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+    </p>
+</fieldset>
     </form>
 </Article>
 </body>
