@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deji Musa & Co.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body style="background-color: bisque;">
+    <header>
+        <h1>Deji Musa & Co.</h1>
+    </header>
+
+        <hr>
+
+
+    <Article>
+        <h2>Join Our Legal Team&nbsp;-&nbsp;Application Form</h2>
+        <P>Please fill in the form</P>
+        
+    
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+           
+                <p>
+            <label for="FirstName">First Name</label>
+            <input type="text" name="FirstName" id="FirstName" placeholder="Tsintop" autocomplete="on"> 
+        </p>
+       
+
+       
+            <p>
+            <label for="LastName">Last Name</label>
+            <input type="text" name="LastName" id="LastName" placeholder="Karma" autocomplete="on"> 
+        </p>
+   
+
+   
+            <p>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="tsintopiteshi@gmail.com" required>
+        </p>
+  
+
+  
+            <p>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="0905500000" pattern="0 [7-9][0-1][0-9]{8}"> 
+        </p>
+
+        <p>
+            <label for="address">Current Address</label>
+            <input type="text" name="address" id="address">
+        </p>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Professional Background</legend>
+            <p>
+            <label for="education">Educational Background:</label>
+            <select name="education" id="education">
+                <option value="" disabled selected>Select your highest degree</option>
+                <option value="Bachelor's in law (LL.B)">Bachelor's in Law (LL.B)</option>
+                <option value="Master's in law (LL.M)">Master's in Law (LL.M)</option>
+                <option value="others">Others</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="law-school">Law School Attended:</label>
+            <select name="law_school" id="law-school">
+            <option value="" disabled selected>Select Campus</option>
+            <option value="abuja">Abuja</option>
+            <option value="lagos">Lagos</option>
+            <option value="port-harcourt">Port-Harcourt</option>
+            <option value="kano">Kano</option>
+            <option value="enugu">Enugu</option>
+            <option value="bayelsa">Bayelsa</option>
+            <option value="yola">Yola</option>
+        </select>
+        </p>
+
+        <p>
+            <label for="year-of-call">Year of Call to Bar:</label>
+            <input type="number" id="year-of-call" name="year_of_call" min="2010" max="2024" placeholder="Enter year">
+        </p>      
+        
+        <p>
+            <label>Do you have a valid license to practice law?</label><br>
+            <input type="radio" name="validation" id="validation-yes" value="yes">
+            <label for="validation-yes">Yes</label><br>
+            <input type="radio" name="validation" id="validation-no" value="no">
+            <label for="validation-no">No</label>
+        </p>
+        
+    </fieldset>
+
+    <br>
+
+
+    <fieldset>
+        <legend>Work Experience</legend>
+        <p>
+            <label for="years-of-legal-experience">Years of Legal Experience:</label>
+            <input type="number" name="years_of_legal_experience" id="years-of-legal-experience" min="1" max="100">
+        </p>
+
+        <p>
+            <label>Areas of Specialization</label><br>
+            <input type="checkbox" name="specialization" id="specialization-corporate-law" value="corporate-law">
+            <label for="specialization-corporate-law">Corporate Law</label><br>
+            <input type="checkbox" name="specialization" id="specialization-intellectual-property-law" value="intellectual-property-law">
+            <label for="specialization-intellectual-property-law">Intellectual Property Law</label><br>
+            <input type="checkbox" name="specialization" id="specialization-family-law" value="family-law">
+            <label for="specialization-family-law">Family Law</label><br>
+            <input type="checkbox" name="specialization" id="specialization-criminal-law" value="criminal-law">
+            <label for="specialization-criminal-law">Criminal Law</label><br>
+            <input type="checkbox" name="specialization" id="specialization-other" value="other">
+            <label for="specialization-other">Other (Please specify)</label>
+        </p>
+    </fieldset>
+
+    <br>
+    
+    <fieldset>
+        <legend>Motivation and Availability</legend>
+        <p>
+       <label for="reason">Why do you wantto work with our law firm</label>
+       <textarea name="reason" id="reason" placeholder="please explain your reasons here (in not less than 150 words)"></textarea>
+    </p>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Submit Your Application</legend>
+        
+        <p>
+            <button type="submit" value="submit">
+                Submit.
+            </button>
+        </p>
+    </fieldset>
+
+        </form>
+
+</Article>
+</body>
+</html>
