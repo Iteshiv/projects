@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deji Musa & Co.</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <style>
 
     </style>
 </head>
 
-<body style="background-color: bisque;">
+<body>
     <header>
         <h1>Deji Musa & Co.</h1>
     </header>
@@ -20,7 +20,7 @@
 
     <Article>
         <h2>Join Our Legal Team&nbsp;-&nbsp;Application Form</h2>
-        <P>Please fill in the form</P>
+        <P class="main">Please fill in the form</P>
         
     
         <form action="https://httpbin.org/get" method="get">
@@ -28,33 +28,33 @@
                 <legend>Personal Information</legend>
            
                 <p>
-            <label for="FirstName">First Name</label>
+            <label for="FirstName" class="personal-info">First Name</label>
             <input type="text" name="FirstName" id="FirstName" placeholder="Tsintop" autocomplete="on"> 
         </p>
        
 
        
             <p>
-            <label for="LastName">Last Name</label>
+            <label for="LastName" class="personal-info">Last Name</label>
             <input type="text" name="LastName" id="LastName" placeholder="Karma" autocomplete="on"> 
         </p>
    
 
    
             <p>
-            <label for="email">Email Address</label>
+            <label for="email" class="personal-info">Email Address</label>
             <input type="email" name="email" id="email" placeholder="tsintopiteshi@gmail.com" required>
         </p>
   
 
   
             <p>
-            <label for="phone">Phone Number</label>
+            <label for="phone" class="personal-info">Phone Number</label>
             <input type="tel" name="phone" id="phone" placeholder="0905500000" pattern="0 [7-9][0-1][0-9]{8}"> 
         </p>
 
         <p>
-            <label for="address">Current Address</label>
+            <label for="address" class="personal-info">Current Address</label>
             <input type="text" name="address" id="address">
         </p>
     </fieldset>
@@ -64,7 +64,7 @@
     <fieldset>
         <legend>Professional Background</legend>
             <p>
-            <label for="education">Educational Background:</label>
+            <label for="education" class="education">Educational Background:</label>
             <select name="education" id="education">
                 <option value="" disabled selected>Select your highest degree</option>
                 <option value="Bachelor's in law (LL.B)">Bachelor's in Law (LL.B)</option>
@@ -74,7 +74,7 @@
         </p>
 
         <p>
-            <label for="law-school">Law School Attended:</label>
+            <label for="law-school" class="law-school">Law School Attended:</label>
             <select name="law_school" id="law-school">
             <option value="" disabled selected>Select Campus</option>
             <option value="abuja">Abuja</option>
@@ -132,7 +132,7 @@
     <fieldset>
         <legend>Motivation and Availability</legend>
         <p>
-       <label for="reason">Why do you wantto work with our law firm</label>
+       <label for="reason" class="reason">Why do you want to work with our law firm?</label>
        <textarea name="reason" id="reason" placeholder="please explain your reasons here (in not less than 150 words)"></textarea>
     </p>
     </fieldset>
