@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+</head>
+
+<body>
+    <h1>Library Management</h1>
+
+    <script src="upskill.js"></script>
+
+    <h2>Add a Book</h2>
+    <input type="text" id="title" placeholder="Book Title" />
+    <input type="text" id="author" placeholder="Author" />
+    <input type="number" id="yearPublished" placeholder="Year Published" />
+    <button onclick="addBookFromInput()">Add Book</button>
+
+    <h2>View Books</h2>
+    <button onclick="viewBooks()">View Library</button>
+    <div class="book-list" id="bookList"></div>
+
+    <h2>Delete a Book</h2>
+    <input type="text" id="deleteTitle" placeholder="Book Title to Delete" />
+    <button onclick="deleteBookFromInput()">Delete Book</button>
+</body>
+</html>

@@ -17,6 +17,7 @@ h1 {
 
 h2 {
     margin-top: 20px;
+    text-align: center;
 }
 
 .main {
@@ -121,4 +122,8 @@ legend {
     border-radius: 10px;
 }
 
-
+@media (max-width: 600px) {
+    fieldset {
+        width: 100% ;
+    }
+}

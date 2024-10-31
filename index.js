@@ -1,11 +1,15 @@
-let name = "Tsintop";
-let age = "24";
-let salary = "150,000.00";
-let single = "True";
+function analyzeArray(arr) {
+    const sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    const average = sum / arr.length;
+    const max = Math.max(...arr);
+    
+    return {
+        sum: sum,
+        average: average,
+        max: max
+    };
+}
 
-
-
-console.log(name);
-console.log(age);
-console.log(salary);
-console.log(single)
+let arr = [23, 45, 56, 73, 45, 23, 98];
+const result = analyzeArray(arr);
+console.log(result);
